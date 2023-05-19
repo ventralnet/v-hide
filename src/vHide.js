@@ -12,4 +12,4 @@ const directiveDefinition = {
 
 Vue.directive('hide', directiveDefinition);
 
-module.exports = directiveDefinition;
+export default directiveDefinition;
