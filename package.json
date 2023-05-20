@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "vue-cli-service build --target lib --name vHide src/vHide.js",
+    "build": "vue-cli-service build --target lib --name vHide src/lib/vHide.js",
     "test:unit": "vue-cli-service test:unit",
+    "serve": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
     "clean": "rm -rfv dist"
   },
