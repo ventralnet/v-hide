@@ -72,6 +72,10 @@
 
     <section>
       <h2>v-hide example:</h2>
+      <p>
+        Notice when you toggle div-a on and off with <strong><em>v-hide</em></strong> the
+        space occupied in the DOM layout DOES NOT disappears and div-b stays put.
+      </p>
       <label for="vHideToggle">
         <input
         id="vHideToggle"
