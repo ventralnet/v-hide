@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build": "vue-cli-service build --target lib --name vHide src/lib/vHide.js",
+    "build-example": "vue-cli-service build --target app --dest dist/example",
     "test:unit": "vue-cli-service test:unit",
     "serve": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
