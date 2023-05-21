@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import VHideExampleVue from './VHideExample.vue';
-import '../dist/vHide.umd';
+import './lib/vHide';
 
 Vue.config.productionTip = false;
 
