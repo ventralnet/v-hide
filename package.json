@@ -1,10 +1,10 @@
 {
-  "name": "v-hide",
+  "name": "@ventralnet/v-hide",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "build": "vue-cli-service build --target lib --name vHide src/lib/vHide.js",
-    "build-example": "vue-cli-service build --target app --dest dist/example",
+    "build-example": "npm run build && vue-cli-service build --target app --dest dist/example",
     "test:unit": "vue-cli-service test:unit",
     "serve": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
@@ -30,6 +30,30 @@
     "eslint-plugin-vue": "^8.0.3",
     "eslint-plugin-vuejs-accessibility": "^1.1.0",
     "jest": "^27.0.5",
+    "vue-jest": "^3.0.7",
     "vue-template-compiler": "^2.6.14"
-  }
+  },
+  "description": "## Overview v-hide is a Vue.js 2 directive that allows for conditional rendering maintaining rendered layout space in the DOM. Simply put... v-hide will add `visibility: hidden;` or `visibility: visible` styles based on a boolean vue expression",
+  "main": ".eslintrc.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ventralnet/v-hide.git"
+  },
+  "keywords": [
+    "vue",
+    "vue2",
+    "v-hide",
+    "vhide",
+    "hidden",
+    "directive"
+  ],
+  "author": "matt.kirkley@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ventralnet/v-hide/issues"
+  },
+  "homepage": "https://github.com/ventralnet/v-hide#readme"
 }
