@@ -1,6 +1,6 @@
 {
   "name": "@ventralnet/v-hide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "scripts": {
     "build": "vue-cli-service build --target lib --name vHide src/lib/vHide.js",
