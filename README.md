@@ -19,7 +19,7 @@ npm install @ventralnet/v-hide --save
 ```
 
 ```javascript 
-import 'vHide' // in your main vue entrypont
+import '@ventralnet/v-hide' // in your main vue entrypont
 
 ...
 
