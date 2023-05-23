@@ -4,7 +4,6 @@
 
 <script>
   import '@/src/lib/vHide';
-  import '@/src/lib/vHide';
 
   export default {
     props: {

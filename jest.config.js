@@ -1,6 +1,7 @@
 module.exports = {
+  verbose:true,
   preset: '@vue/cli-plugin-unit-jest',
   moduleNameMapper: {
-    "^@\/": "<rootDir>/"
+    "^@\/": "<rootDir>"
   },
 };
