@@ -4,17 +4,17 @@ import Mock from './mock/Mock.vue';
 describe('HelloWorld.vue', () => {
   it('renders props.msg when passed', async () => {
     const wrapper = shallowMount(Mock, {
-      propsData: { isHide: true, },
+      propsData: { isHide: true },
     });
 
     await wrapper.vm.$nextTick();
 
-    let element = wrapper.find('.sample-div').element;
+    let { element } = wrapper.find('.sample-div');
     expect(element).toBeDefined();
 
-    let visibility = element.style.visibility;
+    let { visibility } = element.style;
     console.log(visibility);
-    expect(visibility).toBe('hidden'); 
+    expect(visibility).toBe('hidden');
 
     wrapper.setProps({ isHide: true });
     await wrapper.vm.$nextTick();

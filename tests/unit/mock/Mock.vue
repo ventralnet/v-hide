@@ -3,11 +3,11 @@
 </template>
 
 <script>
-  import '@/src/lib/vHide';
+import '@/src/lib/vHide';
 
-  export default {
-    props: {
-      isHide: Boolean,
-    },
-  };
+export default {
+  props: {
+    isHide: Boolean,
+  },
+};
 </script>
