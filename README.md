@@ -35,8 +35,8 @@ import '@ventralnet/v-hide' // in your main vue entrypont
 </template>
 
 <script>
-import 'vHide'  // Import vHide in your main entry point after importing Vue
-                // vHide will automatically add itself as a directive to the global Vue object
+mport '@ventralnet/v-hide'  // Import vHide in your main entry point after importing Vue
+                            // vHide will automatically add itself as a directive to the global Vue object
 export default {
   data() {
     return {
