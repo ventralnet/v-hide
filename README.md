@@ -15,7 +15,7 @@ The key feature v-hide provides is to allow conditional rendering but also inclu
 ## Installation
 
 ```Bash 
-npm install vHide --save
+npm install @ventralnet/v-hide --save
 ```
 
 ```javascript 

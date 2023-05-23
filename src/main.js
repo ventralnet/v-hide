@@ -7,3 +7,4 @@ Vue.config.productionTip = false;
 new Vue({
   render: (h) => h(VHideExampleVue),
 }).$mount('#app');
+

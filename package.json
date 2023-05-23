@@ -1,7 +1,7 @@
 {
   "name": "@ventralnet/v-hide",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "build": "vue-cli-service build --target lib --name vHide src/lib/vHide.js",
     "build-example": "npm run build && vue-cli-service build --target app --dest dist/example",
@@ -11,6 +11,7 @@
     "clean": "rm -rfv dist"
   },
   "dependencies": {
+    "@ventralnet/v-hide": "^1.0.0",
     "core-js": "^3.8.3",
     "vue": "^2.6.14"
   },
@@ -34,7 +35,7 @@
     "vue-template-compiler": "^2.6.14"
   },
   "description": "## Overview v-hide is a Vue.js 2 directive that allows for conditional rendering maintaining rendered layout space in the DOM. Simply put... v-hide will add `visibility: hidden;` or `visibility: visible` styles based on a boolean vue expression",
-  "main": ".eslintrc.js",
+  "main": "dist/vHide.umd.js",
   "directories": {
     "test": "tests"
   },
