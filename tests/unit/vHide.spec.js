@@ -13,7 +13,6 @@ describe('HelloWorld.vue', () => {
     expect(element).toBeDefined();
 
     let { visibility } = element.style;
-    console.log(visibility);
     expect(visibility).toBe('hidden');
 
     wrapper.setProps({ isHide: true });
