@@ -1,9 +1,5 @@
-import Vue from 'vue';
-import VHideExampleVue from '@/src/VHideExample.vue';
-import '@/src/lib/vHide';
+import { createApp } from 'vue';
+import VHideExample from '@/src/VHideExample.vue';
 
-Vue.config.productionTip = false;
+createApp(VHideExample).mount('#app');
 
-new Vue({
-  render: (h) => h(VHideExampleVue),
-}).$mount('#app');

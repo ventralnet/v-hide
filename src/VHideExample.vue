@@ -94,7 +94,12 @@
 </template>
 
 <script>
+import vHide from '@/src/lib/vHide';
+
 export default {
+  directives: {
+    hide: vHide,
+  },
   data() {
     return {
       toggles: {
