@@ -1,10 +1,14 @@
-import { shallowMount } from '@vue/test-utils';
+import { mount } from '@vue/test-utils';
 import Mock from './mock/Mock.vue';
+import vHide from '@/src/lib/vHide';
 
 describe('HelloWorld.vue', () => {
   it('renders props.msg when passed', async () => {
-    const wrapper = shallowMount(Mock, {
-      propsData: { isHide: true },
+    const wrapper = mount(Mock, {
+      directives: {
+        hide: vHide,
+      },
+      props: { isHide: true },
     });
 
     await wrapper.vm.$nextTick();

@@ -1,15 +1,12 @@
-import Vue from 'vue';
-
 const updateNode = (el, binding) => {
   const isHide = binding.value;
   el.style.visibility = isHide ? 'hidden' : 'visible';
 };
 
 const directiveDefinition = {
-  bind: updateNode,
-  update: updateNode,
+  beforeMount: updateNode,
+  updated: updateNode,
 };
 
-Vue.directive('hide', directiveDefinition);
-
 export default directiveDefinition;
+
