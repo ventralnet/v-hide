@@ -1,7 +1,7 @@
 # v-hide
 
 ## Overview
-v-hide is a Vue.js 2 directive that allows for conditional rendering maintaining rendered layout space in the DOM.
+v-hide is a Vue.js 2 and 3 directive that allows for conditional rendering maintaining rendered layout space in the DOM.
 Simply put... v-hide will add `visibility: hidden;` or `visibility: visible` styles based on a boolean vue expression
 
 Live Demo [V-Hide Demo](https://polite-bonbon-abd119.netlify.app/)
@@ -12,13 +12,25 @@ the DOM.  v-show will set `display: none` style which hides your item and remove
 
 The key feature v-hide provides is to allow conditional rendering but also include the items dimensions if it is hidden.  More specifically v-hide will set the style `visibility: hidden;` or `visibility: visible`.  This may help with some layouts.  See the Live Demo [V-Hide Demo](https://polite-bonbon-abd119.netlify.app/) to show the conditional rendering options.
 
+# Important!
+
+For vue2 use the npm ^1.0.0 version
+
+For vue3 use the npm ^3.0.0 version
+
 ## Installation
 
-```Bash 
-npm install @ventralnet/v-hide --save
+### Vue2
+```Bash
+npm install @ventralnet/v-hide@^1.0.0 --save
 ```
 
-```javascript 
+### Vue3
+```Bash
+npm install @ventralnet/v-hide@^3.0.0 --save
+```
+
+```javascript
 import '@ventralnet/v-hide' // in your main vue entrypont
 
 ...
@@ -42,7 +54,7 @@ export default {
     return {
       isHidden: false,
     };
-  }  
+  }
 };
 </script>
 ```
