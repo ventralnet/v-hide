@@ -31,7 +31,25 @@ npm install @ventralnet/v-hide@^3.0.0 --save
 ```
 
 ```javascript
+/* 
+  In vue2 (v-hide v^1.0.0) you don't need to add v-hide as a directive, just import the 
+  dependency
+*/
 import '@ventralnet/v-hide' // in your main vue entrypont
+
+/*
+ In Vue 3 you need to import the directive definition and add it to your vue app
+*/
+import vHide from '@ventralnet/v-hide';
+
+...
+
+const myApp = createApp({...});
+
+...
+
+myApp.directive('hide', vHide);
+
 
 ...
 
