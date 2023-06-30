@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const { defineConfig } = require('@vue/cli-service');
 const path = require('path');
 
@@ -9,5 +10,10 @@ module.exports = defineConfig({
         '@': path.resolve(__dirname, ''),
       },
     },
+    plugins: [
+      new webpack.ProvidePlugin({
+        'Vue': 'Vue',
+      }),
+    ],
   },
 });
